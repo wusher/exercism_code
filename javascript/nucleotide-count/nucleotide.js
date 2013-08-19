@@ -7,7 +7,7 @@ var DNA = function (sequence) {
 };
 
 DNA.prototype.parseNucleotides = function () {
-  results = {};
+  var results = {};
   DNA_NUCLEOTIDES.forEach(function (nucleotide) {
     results[nucleotide] = this.count(nucleotide);
   }, this);
