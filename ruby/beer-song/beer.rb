@@ -9,9 +9,9 @@ class Beer
 
   def verse(count)
     case count
-    when 0; verse_0
-    when 1; verse_1
-    else; verse_x(count)
+    when 0 then verse_0
+    when 1 then verse_1
+    else verse_x(count)
     end
   end
 
@@ -32,9 +32,9 @@ class Beer
 
   def beer_text(count)
     case count
-    when 0; "no more bottles of beer"
-    when 1; "1 bottle of beer"
-    else; "#{count} bottles of beer"
+    when 0 then "no more bottles of beer"
+    when 1 then "1 bottle of beer"
+    else "#{count} bottles of beer"
     end
   end
 end
